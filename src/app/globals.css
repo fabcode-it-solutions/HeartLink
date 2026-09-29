@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .homePageTitle {
+        font-size: 2em;
+    }
+
+    .footer {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        white-space: nowrap;
+        line-height: 30px;
+    }
+
+    .pagination-component {
+        @apply cursor-pointer border-2 hover:bg-pink-100 flex items-center justify-center rounded-lg shadow-sm min-w-[36px] w-9 h-9 text-sm
+    }
+
+        .table {
+        @apply min-w-full divide-y divide-gray-200;
+    }
+
+    .table-head {
+        @apply bg-gray-50;
+    }
+
+    .table-head th {
+        @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+    }
+
+    .table-body {
+        @apply bg-white divide-y divide-gray-200;
+    }
+
+    .table-body td {
+        @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900;
+    }
+
+    .cookie-consent-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #2d2d2d;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+        z-index: 9999;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cookie-consent-bar button {
+        background-color: #8f0783;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .cookie-consent-bar button:hover {
+        color: black;
+        background-color: #14a107;
+    }
+
+    .cookie-consent-bar p {
+        margin: 0 0 10px;
+    }
+
+    .cookie-consent-bar a {
+        color: #059b19;
+        text-decoration: none;
+    }
+
+    .cookie-consent-bar a:hover {
+        text-decoration: underline;
+    }
+
+    .cookie-consent-bar .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
